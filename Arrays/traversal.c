@@ -1,5 +1,6 @@
 // code for printing the array elements.
 // Written espically in C because my exam are in this so can't take risk
+// Declare a big array and then ask user about the size of the array he wants to be.
 
 #include <stdio.h>
 #include <stdlib.h>
