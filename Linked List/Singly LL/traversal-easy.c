@@ -20,12 +20,13 @@ void printList(struct node *p){
 int main()
 {
 	struct node *head;
-	struct node *one = NULL;
+	struct node *one = NULL;  // These are just pointer to node
 	struct node *two = NULL;
 	struct node *three = NULL;
 	
 	// Taking memory for node
-	one = malloc(sizeof(struct node));
+	// Assigning memory & keeping the location in these pointers
+	one = malloc(sizeof(struct node));  
 	two = malloc(sizeof(struct node));
 	three = malloc(sizeof(struct node));
 	
