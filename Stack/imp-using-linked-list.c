@@ -1,3 +1,7 @@
+// in linked list we insert & delete at the beginnig as it takes o(1) 
+// than at the end which takes O(n)
+// in linked list there is no stack overflow ://
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,8 +10,10 @@ struct node {
 	struct node *next;
 };
 
+// head is sexy but top is more cool & useful
 struct node *top = NULL;
 
+// to insert element in the beginning
 void push(int x) {
 	struct node *temp = NULL;
 	temp = (struct node *)(malloc(sizeof(struct node)));
@@ -23,11 +29,11 @@ void push(int x) {
 	}
 }
 
+// to remove element
 void pop() {
 	struct node *temp = top;
 	if(temp == NULL) {
 		printf("Stack Underflow\n");
-		return;
 	}else {
 		top = temp->next;
 		free(temp);
